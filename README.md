@@ -53,23 +53,6 @@ Since the Earth is a continuous system, phenomena occurring in one area, particu
 
 We intend to use a variety of methods, including but not limited to data scraping with bots, querying open APIs, and reverse engineering open government APIs, to gather data every day for the features listed below.
 
-## FEATURES 	DATASET 
-Cumulative Rainfall 	Telangana Daily Weather Data 2018 - 2022([Telangana Weather Data 2022 |TelanganaOpenDataPortal(https://data.telangana.gov.in/dataset/telangana-weather-data2022)) 
-Cloud Cover 	National Information System for Climate and Environmental Studies 
-(Satellite Data from various satellites such as CARTOSAT and INSAT) 
-Surface soil moisture 	
-Daylight Hours (Number of hours between sunrise and sunset)  	Using python library suntime 
-ONI (Oceanographic Nino Index) 	NOAA Oceanic Nino Index (ONI) [Climate Prediction Center - ONI (noaa.gov)] 
-MJO amplitude (RMM1 + 
-RMM2) 	NOAA MJO Index Data 1971-2022 
-[NOAA][https://www.psl.noaa.gov/mjo/mjoindex/] 
-SST Tropical Pacific at various pressure levels 	[International Comprehensive Ocean-Atmosphere Data Set 
-(ICOADS)][(https://icoads.noaa.gov/products.html)] 
-SST Tropical Atlantic at various pressure levels 	
-SST Indian Ocean at various pressure levels 	
- 
-The data will be cleansed after it has been gathered. Encoding is not necessary because we have not examined categorical data; however, each datapoint will be scaled using standard scaling using sklearn's StandardScaler.
-
 ## Usage
 For each of the five areas, we intend to use two different models and the aforementioned methods.
 The best model will be picked for each location after the findings are compared. The comparative measures will be the common MAE, MAPE, and R2 score metrics. Data from the first four years will serve as training data, and data from the final year (i.e. 2022) will serve as assessment data.
@@ -129,3 +112,5 @@ Libraries to be used:
 |     SST Tropical Pacific at various pressure levels                    |     [International   Comprehensive Ocean-Atmosphere Data Set      (ICOADS)][(https://icoads.noaa.gov/products.html)]                                                                          |
 |     SST Tropical Atlantic at various pressure levels                   |                                                                                                                                                                                               |
 |     SST Indian Ocean at various pressure levels                        |                                                                                                                                                                                               |
+
+The data will be cleansed after it has been gathered. Encoding is not necessary because we have not examined categorical data; however, each datapoint will be scaled using standard scaling using sklearn's StandardScaler.
