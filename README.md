@@ -113,4 +113,8 @@ Libraries to be used:
 |     SST Tropical Atlantic at various pressure levels                   |                                                                                                                                                                                               |
 |     SST Indian Ocean at various pressure levels                        |                                                                                                                                                                                               |
 
+<<<<<<< HEAD
 The data will be cleansed after it has been gathered. Encoding is not necessary because we have not examined categorical data; however, each datapoint will be scaled using standard scaling using sklearn's StandardScaler.
+=======
+The data will be cleansed after it has been gathered. Encoding is not necessary because we have not examined categorical data; however, each datapoint will be scaled using standard scaling using sklearn's StandardScaler.
+>>>>>>> VS-Code-Environment-Priyadharshan2003
